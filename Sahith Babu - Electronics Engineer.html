@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<!-- saved from url=(0107)file:///C:/Users/lahar/anaconda3/Lib/site-packages/holoviews/examples/gallery/demos/matplotlib/HTML_2_.HTML -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahith Babu - Electronics Engineer</title>
+    <link href="./Sahith Babu - Electronics Engineer_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="./Sahith Babu - Electronics Engineer_files/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 150px 0 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4rem;
+            max-width: 1000px;
+            flex-wrap: wrap;
+        }
+        .profile-img {
+            width: 250px;
+            height: 300px;
+            border-radius: 20px;
+            object-fit: cover;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            border: 5px solid white;
+        }
+        .hero-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin: 0 10px 10px 0;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        .btn-secondary:hover {
+            background: white;
+            color: #667eea;
+        }
+        .btn-resume {
+            background: #28a745;
+            color: white;
+        }
+        .btn-resume:hover {
+            background: #218838;
+            color: white;
+        }
+        /* Welcome Section */
+        .welcome {
+            padding: 80px 0;
+            text-align: center;
+            background: #f8f9ff;
+        }
+        .welcome h2 {
+            font-size: 4rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+        /* Cards */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        .card i {
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        /* Experience */
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        .exp-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-left: 5px solid #667eea;
+        }
+        .exp-card h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        .exp-card .designation {
+            font-weight: 600;
+            color: #667eea;
+            font-size: 1.1rem;
+        }
+        .exp-card .tenure {
+            color: #666;
+            font-style: italic;
+        }
+        /* Skills */
+        .skills {
+            background: #f8f9ff;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .skill-tag {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 500;
+        }
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 3rem 0 1rem;
+        }
+        .social-links {
+            margin: 2rem 0;
+        }
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #667eea;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .welcome h2 {
+                font-size: 2.5rem;
+            }
+            .hero {
+                padding: 120px 0 60px;
+            }
+            .hero-content {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            .profile-img {
+                width: 200px;
+                height: 240px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">WELCOME!!</div>
+            <ul class="nav-links">
+                <li><a href="file:///C:/Users/lahar/anaconda3/Lib/site-packages/holoviews/examples/gallery/demos/matplotlib/HTML_2_.HTML#home">Home</a></li>
+                <li><a href="file:///C:/Users/lahar/anaconda3/Lib/site-packages/holoviews/examples/gallery/demos/matplotlib/HTML_2_.HTML#about">About</a></li>
+                <li><a href="file:///C:/Users/lahar/anaconda3/Lib/site-packages/holoviews/examples/gallery/demos/matplotlib/HTML_2_.HTML#experience">Experience</a></li>
+                <li><a href="file:///C:/Users/lahar/anaconda3/Lib/site-packages/holoviews/examples/gallery/demos/matplotlib/HTML_2_.HTML#skills">Skills</a></li>
+                <li><a href="file:///C:/Users/lahar/anaconda3/Lib/site-packages/holoviews/examples/gallery/demos/matplotlib/HTML_2_.HTML#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <a href="./Sahith Babu - Electronics Engineer_files/Gemini_Generated_Image_5r99a65r99a65r99.png"></a>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="./Sahith Babu - Electronics Engineer_files/Gemini_Generated_Image_5r99a65r99a65r99.png" alt="Sahith Babu Profile" class="profile-img">
+                <div class="hero-text">
+                    <h1>Karpurapu Sahith Babu</h1>
+                    <p>Detail-oriented Electronics and Communication Engineering student with expertise in embedded systems, circuit design, and wireless technologies. Passionate about innovative hardware projects and AI applications.</p>
+                    <div>
+                        <a href="file:///C:/Users/lahar/anaconda3/Lib/site-packages/holoviews/examples/gallery/demos/matplotlib/HTML_2_.HTML#about" class="btn">Learn More</a>
+                        <a href="file:///C:/Users/lahar/anaconda3/Lib/site-packages/holoviews/examples/gallery/demos/matplotlib/HTML_2_.HTML#contact" class="btn btn-secondary">Contact Us</a>
+                        <a href="file:///C:/Users/lahar/anaconda3/Lib/site-packages/holoviews/examples/gallery/demos/matplotlib/sahith-resume_new.pdf" class="btn btn-resume" download=""><i class="fas fa-download"></i> Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="welcome">
+        <div class="container">
+            <h2>Welcome</h2>
+            <p>Explore my professional journey in electronics engineering, from cutting-edge projects to hands-on industry experience.</p>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <div class="cards">
+            <div class="card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Education</h3>
+                <p>B.Tech in Electronics and Communication<br>Bharath Institute of Higher Education and Research, Chennai (2026) - 80.0%</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-project-diagram"></i>
+                <h3>Key Project</h3>
+                <p>Wireless Power Transfer using Resonant Inductive Coupling<br>Engineered efficient energy transmission prototype (Oct-Dec 2025)</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-certificate"></i>
+                <h3>Certifications</h3>
+                <p>VLSI (NSIC 2025), Python for Data Science (IBM 2025), AWS (I-Studio 2025)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="skills">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-grid">
+                <div class="exp-card">
+                    <h3>Schneider Electric India Pvt Ltd</h3>
+                    <div class="designation">Production Operator</div>
+                    <div class="tenure">Jan 2026 - Apr 2026 (3 months)</div>
+                    <p>Hands-on role in production operations, ensuring quality and efficiency in manufacturing processes.</p>
+                </div>
+                <div class="exp-card">
+                    <h3>Wireless Power Transfer Project</h3>
+                    <div class="designation">Project Engineer</div>
+                    <div class="tenure">Oct 2025 - Dec 2025</div>
+                    <p>Designed and optimized resonant inductive coupling system for efficient wireless energy transfer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills &amp; Interests</h2>
+            <div class="skills-list">
+                <span class="skill-tag">C/C++ Programming</span>
+                <span class="skill-tag">MATLAB</span>
+                <span class="skill-tag">Proteus</span>
+                <span class="skill-tag">VLSI</span>
+                <span class="skill-tag">Embedded Systems</span>
+                <span class="skill-tag">AutoCAD</span>
+                <span class="skill-tag">Front-end (HTML/CSS)</span>
+                <span class="skill-tag">Geopolitics</span>
+                <span class="skill-tag">Current Affairs</span>
+                <span class="skill-tag">Researching</span>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="file:///C:/Users/lahar/Downloads/sahith-resume_new%20(2).pdf" class="btn btn-resume" download=""><i class="fas fa-download"></i> View Full Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Bapatla, Andhra Pradesh, India | sahithbabu42@gmail.com | +91 9676980312</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/sahith__sai"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/karpurapu-sahithbabu-511711322"><i class="fab fa-linkedin"></i></a>
+                <a herf="sahithbabu42@gmail.com"><i class="fab fa-Gmail"></i></a>
+            </div>
+            <p>© 2026 Karpurapu Sahith Babu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body></html>
